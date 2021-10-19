@@ -1,6 +1,13 @@
-let movie = new Array();
-movie.director = 'Tarantino';
-console.log(movie);
-movie.year = '2011';
-console.log(movie);
-movie.title = 'Django';
+class Carro{
+    #color;
+    setColor(color){
+        this.#color = color;
+    }
+    getColor(){
+        return this.#color;
+    }
+}
+
+let carro = new Carro();
+carro.setColor('red');
+console.log(carro.getColor());
